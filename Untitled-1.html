@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mishael Alpha Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navheader">
+                <div class="logo" id="logo"><a href="#"><span>Mishael</span>Omega</a></div>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check">
+                <ul class="menu">
+                    <li> <a href="#subtitle">Home</a></li>
+                    <li> <a href="#contactus">Contact</a></li>
+                    <li> <a href="#">Resume</a></li>
+                    <li> <a href="">Services</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <section class="section">
+            <div class="section__container">
+                <div class="content">
+                    <p class="subtitle" id="subtitle">HELLO</p>
+                    <h1 class="title">
+                        I'm <span>Mishael <br> a </span> IT Officer
+                    </h1>
+                    <p class="description">
+                        Hello, I'm Mishael omega, an IT Officer with a passion <br> 
+                        for leveraging technology to solve complex problems and <br> 
+                        drive organizational success. With a keen interest in system administration,
+                        graphic design, and innovative IT solutions, I have cultivated a diverse skill <br>
+                        set over the years. <br>  
+                    </p>
+                    <div class="action__btns">
+                        <a href="#section2"> <button class="hire__me">My Projects</button></a>
+                        <a href="#section1"> <button class="about">About me</button></a>
+                    </div> 
+                </div>
+                 <div class="image">
+                    <img src="asset/profile.png" alt="profile">
+                 </div>
+            
+            </div>
+        </section>
+    </header>
+    <section id="section1">
+        <div class="section__cont">
+            <div class="content">
+                <h1 class="title">
+                    <span>About </span> me
+                </h1>
+                <p class="description">
+                    I have over 1 years of experience in managing <br>
+                     IT infrastructures, ensuring the seamless operation of <br>
+                      networks, and implementing security measures. My roles <br>
+                       have included: System Administration at NSSF CORPORATION <br>
+                        Network Security Analyst at STRATON Tech Solutions
+                </p>
+
+            </div>
+        
+        </div>
+    </section>
+    <section id="section2">
+        <div class="section__cont">
+            <div class="content">
+                <h1 class="title">
+                    <span>My</span> Projects
+                </h1>
+                <p class="description">
+                    <span>1.</span>Projects Implemented a comprehensive <br> cybersecurity strategy
+                     resulting in a 30% reduction <br> in security incidents. <br>
+                    <br><span>2.</span> Upgraded the organization's network infrastructure, <br> improving performance and reliability.
+                </p>
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="contactus" id="contactus">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Your Message:</label>
+          <textarea id="text" name="message" rows="4" required></textarea>
+    
+          <a href="#contactus"><button onclick="showMessage">Send Message</button></a>
+        </form>
+      </section>
+
+      <div class="message" id="message">Your message has been received! <br>  Thank you for texting us </div>
+      <script>
+        function showMessage() {
+        var messageElement = document.getElementById('message');
+        messageElement.style.display = 'block';
+
+        setTimeout(function () {
+            messageElement.style.display = 'none';
+        }, 10000);
+    }
+
+    showMessage();
+
+
+
+      </script>
+
+    
+</body>
+
+</html>

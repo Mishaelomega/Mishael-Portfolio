@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+ 
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf5ff;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ecddf9;
+    z-index: 99;
+}
+.navheader {
+    max-width: 1200px ;
+    margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #a855f7;
+    transition: 0.4s;
+  }
+
+  nav .logo a:hover {
+    color: #1a0494;
+  }
+
+  nav .checkbox {
+    display: none;
+  }
+  
+  nav input {
+    display: none;
+  }
+  nav .checkbox i {
+    font-size: 2rem;
+    color: #a855f7;
+    cursor: pointer;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.4s;
+  }
+  
+  ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration:none;
+    font-weight: 600;
+    color: #1f2937;
+    transition: 0.3s;
+  }
+
+  ul li a:hover {
+    border-top-color: #ca8a04;
+    border-bottom-color: #ca8a04;
+    color: #ca8a04;
+  }
+  
+  .section {
+    background-color: #faf5ff;
+  }
+  
+  .section__container {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .section__cont{
+
+    padding: 10rem 1rem 5rem 1rem;
+      text-align: center;
+      grid-template-columns: repeat(1, 1fr);
+      font-size: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .subtitle {
+    letter-spacing: 3px;
+    color: #9333ea;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #1f3725;
+    margin-bottom: 1rem;
+  }
+  .title span {
+    font-weight: 600;
+  }
+
+  
+  .description {
+    line-height: 1.5rem;
+    color: #11ae40;
+    margin-bottom: 2rem;
+  }
+  
+  .action__btns {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .action__btns button {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid #a855f7;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .hire__me {
+    background-color: #a855f7 ;
+    color: #ffffff;
+  }
+  
+  .hire__me:hover {
+    background-color: #553475;
+  }
+
+  .about {
+    color: #9333ea;
+  }
+  
+  .about:hover {
+    background-color: #553475;
+    color: #ffffff;
+  }
+
+  .image {
+    display: grid;
+    place-items: center;
+  }
+
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #555;
+  }
+
+  .contactus{
+    width: 50%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+  }
+
+  input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+  .image img {
+    width: min(25rem, 90%);
+    
+  }
+.message {
+  display: none;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            top: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+    overflow:auto;
+}
+  @media (width < 750px) {
+    nav .checkbox {
+      display: block;
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 85px);
+      left: -100%;
+      top: 85px;
+      background-color: rgba(50, 11, 179, 0.8);
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
+  
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    ul li a {
+      font-size: 1.25rem;
+    }
+  
+    .section__container {
+      padding: 10rem 1rem 5rem 1rem;
+      text-align: center;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .image {
+      grid-area: 1/1/2/2;
+    }
+  
+    .action__btns {
+      margin: auto;
+    }
+  }
